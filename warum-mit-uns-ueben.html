@@ -1,0 +1,180 @@
+<!DOCTYPE html><html lang="de"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#db0000",
+                        "background-light": "#f8f5f5",
+                        "background-dark": "#230f0f",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="relative flex min-h-screen flex-col overflow-x-hidden">
+<!-- Navigation Header -->
+<header class="sticky top-0 z-50 flex items-center justify-between border-b border-primary/10 bg-background-light/80 dark:bg-background-dark/80 px-6 py-4 backdrop-blur-md md:px-20 lg:px-40">
+<div class="flex items-center gap-3">
+<div class="flex size-10 items-center justify-center rounded-lg bg-primary text-white">
+<span class="material-symbols-outlined" style="">school</span>
+</div>
+<h2 class="text-xl font-bold tracking-tight text-slate-900 dark:text-slate-100" style="">B1 Sprechen Coach</h2>
+</div>
+<nav class="hidden flex-1 justify-center gap-8 md:flex">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#" style="">Idee X</a>
+<a class="text-sm font-medium text-primary underline decoration-2 underline-offset-8" href="#" style="">Idee Y</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#" style="">Idee Z</a>
+</nav>
+<div class="flex items-center gap-4">
+        <a href="index.html">
+<button class="hidden lg:flex items-center justify-center rounded-lg bg-primary px-5 py-2 text-sm font-bold text-white hover:bg-primary/90 transition-all" style="">
+                    Startseite
+                </button>
+        </a>
+</div>
+</header>
+<main class="flex-1 px-6 py-12 md:px-20 lg:px-40">
+<!-- Hero Section for "Why Choose Us" -->
+<div class="mb-16 max-w-3xl">
+<h1 class="mb-6 text-4xl font-black tracking-tight text-slate-900 dark:text-slate-100 md:text-5xl lg:text-6xl" style="">
+                    Warum mit uns <span class="text-primary" style="">üben?</span>
+</h1>
+<p class="text-lg leading-relaxed text-slate-600 dark:text-slate-400" style="">
+                    Diese Website hilft Ihnen, für die Goethe B1-Prüfung zu üben. Sie können Ihre Antworten hochladen und erhalten KI-basiertes Feedback zu Ihrer Sprachleistung. 
+                </p>
+</div>
+<!-- Main Feature Grid -->
+<div class="grid gap-8 md:grid-cols-3">
+<!-- Card 1: Instant Analysis -->
+<div class="group flex flex-col gap-6 rounded-xl border border-primary/10 bg-white dark:bg-slate-900/50 p-8 shadow-sm transition-all hover:border-primary/30 hover:shadow-md">
+<div class="relative h-48 w-full overflow-hidden rounded-lg bg-slate-100 dark:bg-slate-800">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Abstract visualization of rapid data processing and analysis" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAeynxS_VXyGIa2xrLMGE1tLBlRk5t-aj9Bfllp9dgDc9KQIP57Ef5l77BGsjEywg1Gx1JvpelIhu92FbQ5OeyYNipjgHBQsT2_bMczAx0-1sSAcFXW0_mvw-FGos9awe3Sllbeu8p0SYlBrQ1DCIuAIdv8nHHsSXS7oX25Jc8bCvwC42BMJY8HSlXftcBg0ZigYzl0SuVQT_BtdSYScQPe3tWsmn7dRyOVN7s4OyZxIzOJDiU5LvaJOp4SCmpbZfuclGmhEimWVX0&quot;);"></div>
+<div class="absolute inset-0 flex items-center justify-center bg-primary/10">
+<span class="material-symbols-outlined text-5xl text-primary" style="">speed</span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-xl font-bold text-slate-900 dark:text-slate-100" style="">Analyse und Feedback</h3>
+<p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400" style="">
+                            Laden Sie Ihre Antwort hoch und lassen Sie sie analysieren. Das Feedback orientiert sich an den Bewertungskriterien des Goethe-Zertifikats B1 (Sprechen). 
+                        </p>
+</div>
+</div>
+<!-- Card 2: Exam-Standard Tasks -->
+<div class="group flex flex-col gap-6 rounded-xl border border-primary/10 bg-white dark:bg-slate-900/50 p-8 shadow-sm transition-all hover:border-primary/30 hover:shadow-md">
+<div class="relative h-48 w-full overflow-hidden rounded-lg bg-slate-100 dark:bg-slate-800">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Official exam paper icon with German flag elements" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCo4Y5JF5Tc5SHfh6vu6b5ltVVkdlwZYiOraL4g5E297Maron2MMwz6of5ZkU631c2RUKHKqZjrBn6ZweznmRX3iR64hOPcf4bcENmC82fYdtpyaww1T5DgXalFJdcguqjAEPJybl6kz6ex3ZsNQHhxYClhG5OFC8ijnJLlxJGM9VXzIr22_mLccBlHU7wHFltrtPEBkUJdtSzXxSiMMBlI8V4bR1k_EinCshziF4SVqkWiZn5fPxrM9644E6U8QzxvZQWgxOMvp60&quot;);"></div>
+<div class="absolute inset-0 flex items-center justify-center bg-primary/10">
+<span class="material-symbols-outlined text-5xl text-primary" style="">assignment_turned_in</span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-xl font-bold text-slate-900 dark:text-slate-100" style="">Prüfungsrelevante Aufgaben</h3>
+<p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400" style="">
+                            Die Aufgaben orientieren sich an typischen Themen der B1-Sprechprüfung. So können Sie mit passenden Fragestellungen üben.
+                        </p>
+</div>
+</div>
+<!-- Card 3: Assertive Feedback -->
+<div class="group flex flex-col gap-6 rounded-xl border border-primary/10 bg-white dark:bg-slate-900/50 p-8 shadow-sm transition-all hover:border-primary/30 hover:shadow-md">
+<div class="relative h-48 w-full overflow-hidden rounded-lg bg-slate-100 dark:bg-slate-800">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Humanoid robot giving a thumbs up or encouraging feedback" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuASn-bjBswwrxi8z0mnDL3SWb66SAxd89qU-1T_eMLH21aFjTdeUNDeTread33DdYc20ufJ1jJH5V9crZtFreDjywp0IKf-WJH-WDds8jJ9lJ0AMySP809gyQoNbGCXX9jzK5AGnfXk97R7BjwknG5eFfGc9QHBarZrjDFvzOvq1OIYIwy9RJDvwQhZhuJepKYu9LiKhLM_RnN89UKFAhvuMRCueJAH9pTxrnl3GBuhqmhgEJtfMzZXHfl2mk8FUX0pub4FY6D2X3o&quot;);"></div>
+<div class="absolute inset-0 flex items-center justify-center bg-primary/10">
+<span class="material-symbols-outlined text-5xl text-primary" style="">forum</span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-xl font-bold text-slate-900 dark:text-slate-100" style="">Konstruktives Feedback</h3>
+<p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400" style="">
+                            Lerne aus deinen Fehlern mit gezielten Hinweisen. Unsere KI gibt dir konkrete Verbesserungsvorschläge für deinen individuellen Lernweg.
+                        </p>
+</div>
+</div>
+</div>
+<!-- Stats/Benefits Grid -->
+<div class="mt-24 rounded-2xl bg-primary/5 p-8 md:p-12 lg:p-16">
+<div class="mb-12">
+<h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-100" style="">Deine Vorteile im Überblick</h2>
+<p class="mt-4 text-slate-600 dark:text-slate-400" style="">Diese Website unterstützt Sie beim Üben für die mündliche B1-Prüfung. Sie können Ihre Antworten einreichen und Feedback erhalten.</p>
+</div>
+<div class="grid gap-6 md:grid-cols-3">
+<div class="flex flex-col gap-4 rounded-xl border border-primary/20 bg-background-light dark:bg-background-dark p-6 transition-all hover:bg-white dark:hover:bg-slate-800">
+<div class="text-primary">
+<span class="material-symbols-outlined text-3xl" style="">schedule</span>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-slate-100" style="">Flexibilität</h4>
+<p class="mt-2 text-sm text-slate-600 dark:text-slate-400" style="">Übe wann und wo du willst, direkt in deinem Browser oder auf dem Handy.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-primary/20 bg-background-light dark:bg-background-dark p-6 transition-all hover:bg-white dark:hover:bg-slate-800">
+<div class="text-primary">
+<span class="material-symbols-outlined text-3xl" style="">target</span>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-slate-100" style="">Genauigkeit</h4>
+<p class="mt-2 text-sm text-slate-600 dark:text-slate-400" style="">Die KI analysiert Ihre Antwort und gibt Ihnen Hinweise zu Grammatik, Wortschatz und Ausdruck.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-primary/20 bg-background-light dark:bg-background-dark p-6 transition-all hover:bg-white dark:hover:bg-slate-800">
+<div class="text-primary">
+<span class="material-symbols-outlined text-3xl" style="">trending_up</span>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-slate-100" style="">Reflexion</h4>
+<p class="mt-2 text-sm text-slate-600 dark:text-slate-400" style="">Reichen Sie Ihre Antwort ein und erhalten Sie Feedback zu Ihrer Sprachleistung. So können Sie Ihre Antwort reflektieren und weiter üben.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA Section -->
+<section class="mt-24 flex flex-col items-center justify-center gap-8 py-12 text-center">
+<div class="max-w-2xl space-y-4">
+<h2 class="text-3xl font-black text-slate-900 dark:text-slate-100 md:text-4xl" style="">Bereit für dein B1-Zertifikat?</h2>
+<p class="text-lg text-slate-600 dark:text-slate-400" style="">Starte noch heute dein Training mit unseren Experten-Tools und bestehe deine Prüfung mit Leichtigkeit.</p>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-4">
+<button class="flex min-w-[200px] items-center justify-center rounded-lg bg-primary px-8 py-4 text-lg font-bold text-white transition-all hover:scale-105 active:scale-95 shadow-lg shadow-primary/20" style="">
+                        Los geht's!</button>
+</div>
+</section>
+</main>
+<footer class="mt-20 border-t border-primary/10 bg-slate-50 dark:bg-slate-900/30 px-6 py-12 md:px-20 lg:px-40">
+<div class="flex flex-col items-center justify-between gap-8 md:flex-row">
+<div class="flex items-center gap-3">
+<div class="size-8 rounded bg-primary flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-sm" style="">school</span>
+</div>
+<span class="text-lg font-bold tracking-tight text-slate-900 dark:text-slate-100" style="">B1 Sprechen Coach</span>
+</div>
+<div class="flex gap-6 text-sm text-slate-500 dark:text-slate-400">
+<a class="hover:text-primary" href="#" style="">.</a>
+<a class="hover:text-primary" href="#" style="">,</a>
+<a class="hover:text-primary" href="#" style="">Kontakt</a>
+</div>
+<div class="flex gap-4">
+<a class="flex size-10 items-center justify-center rounded-full bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-primary hover:text-white transition-colors" href="#" style="">
+<span class="material-symbols-outlined" style="">share</span>
+</a>
+</div>
+</div>
+<div class="mt-8 text-center text-xs text-slate-400" style="">
+                © 2026 B1 Sprechen Coach. Alle Rechte vorbehalten.
+            </div>
+</footer>
+</div>
+</body></html>
